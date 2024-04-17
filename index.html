@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <script src="src/sketch.js"></script>
+  <script src="src/sketch1.js"></script>
   <div id="pagecontainer" class="page-container">
     <main>
       <section class="main-section">
@@ -19,7 +19,7 @@
           <article class="main-section__right-text ">
             <h2 class="main-section__title">Frontend <br> Developer</h2>
             <span class="main-section__subtitle">I like to craft solid and scalable applications, <br> focusing on user
-              experience and usability.</span>
+              experience and usability,<br> against overanimated sites.</span>
             <ul class="main-section__technologies">
               <li>TypeScript</li>
               <li>React & NextJS</li>
@@ -30,10 +30,15 @@
               <li>MongoDB</li>
             </ul>
           </article>
-          <article class="main-section__about-me">
+          <article class="about-me">
             <h2>About me</h2>
-            <p></p>
-
+            <p class="about-me__text">I like to create things no matter the field, <br> like this reactive polygonal
+              woven
+              that you can see on the
+              left built on p5.js </p>
+            <br>
+            <br>
+            <br>
             <span class="main-section__resume ">You can view here my
               <a href="src/assets/Raúl_Cassone_web_developer.pdf" target="_blank">Resume
               </a>.
@@ -50,15 +55,15 @@
               <h3>
                 <a class="project__title" href="https://dublab.es" target="_blank">
                   dublab.es
-                  <video class="project__image" width="400" controls autoplay>
+                  <video class="project__image" width="400" autoplay="true">
                     <source src="/src/assets/dublab.es.mp4" type="video/mp4">
                   </video>
                 </a>
               </h3>
-              <p> This site, build on NextJS 14, allows users to check live data on what the radio is streaming, what's
+              <p> This site, built on NextJS 14, allows users to check live data on what the radio is streaming, what's
                 its schedule and
                 listen to the music on air, it features an admin panel that managers can use to change immediately
-                what's the radio schedule shown in the app, and add info on past and future shows and events.
+                what's the radio schedule shown in the app, and add info on past and future shows and events. <br>
                 To close the gap, it features an integration with a 3rd party API that managers use to decide what's
                 the audio streamed on air and what's the audio schedule. </p>
             </article>
@@ -67,9 +72,9 @@
             <article class="project">
               <h3><a class="project__title" href="https://barcelona-sona.netlify.app" target="_blank">Barcelona Sona</a>
               </h3>
-              <p>Final project for my fullstack bootcamp at ISDI Coders, this site allow users to add, delete
-                and modify visited spaces of Barcelona, after user registration, Build on React 18, express.js and
-                MongoDB. </p>
+              <p>Final project for my fullstack bootcamp at ISDI Coders, this site allow users, after user registration,
+                to add, delete
+                and modify visited spaces of Barcelona, Built on React 18, express.js and MongoDB. </p>
             </article>
           </li>
         </ul>
@@ -79,9 +84,11 @@
         <ul>
           <li>
             <article>
-              <h3>Barcelona Reverbera</h3>
-              <p>Convolution reverb plugin for digital audio workstations, this project was selected and funded by the
-                Institut de cultura de Barcelona</p>
+              <h3>Barcelona Reverbera (Alfa)</h3>
+              <p>Convolution reverb plugin for digital audio workstations, taking the roles of project manager
+                and sound engineer,developed in C++ by Daniel Sanz. <br> This project was selected and funded by the
+                Institut de cultura de Barcelona (Currently under development) </p>
+              <a class="side-project__demo" href="video.html"> Tecnical demo</a>
             </article>
           </li>
         </ul>

@@ -12,6 +12,10 @@ li {
   padding: 0;
 }
 
+p {
+  margin: 0;
+}
+
 input {
   background: none;
   border: none;
@@ -41,7 +45,7 @@ canvas {
 
 .page-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
 }
 
 .half-page {
@@ -55,7 +59,7 @@ canvas {
   background: #efebab;
   background: -webkit-linear-gradient(0deg, #efebab 0%, #f0ea7e 100%);
   background: linear-gradient(0deg, #efebab 0%, #f0ea7e 100%);
-  height: 400px;
+  height: 500px;
 }
 
 .main-section__title {
@@ -65,11 +69,6 @@ canvas {
   line-height: 1;
   margin: -3px;
   padding-right: 500px;
-}
-
-.main-section__right {
-  display: flex;
-  flex-direction: column;
 }
 
 .main-section__right-text {
@@ -105,12 +104,18 @@ canvas {
   padding: 6px;
 }
 
-.main-section__about-me {
+.about-me {
   padding: 16px;
+}
+
+.about-me__text {
+  padding-top: 12px;
+  font-size: large;
 }
 
 .main-section__resume {
   font-size: larger;
+  padding-top: 36px;
 }
 
 .projects-section {
@@ -151,11 +156,12 @@ canvas {
 .project__image {
   display: none;
   width: 400px;
-  border: solid rgb(0, 0, 0);
-  border-radius: 12px;
+  border: solid 0.1px rgb(0, 0, 0);
+  border-radius: 16px;
   position: absolute;
   top: 100%;
   left: 0;
+
   z-index: 1;
 }
 
@@ -167,6 +173,11 @@ canvas {
 .side-section__title {
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+.side-project__demo {
+  padding-top: 16px;
+  font-size: large;
 }
 
 .separation-line {
@@ -191,4 +202,18 @@ canvas {
 .contact__link {
   width: 24px;
   height: 24px;
+}
+
+.video {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+}
+
+.video__back {
+  font-size: large;
+  color: white;
 }
