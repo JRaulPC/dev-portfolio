@@ -1,5 +1,5 @@
 function setup() {
-  const myCanvas = createCanvas(450, 1100, WEBGL);
+  const myCanvas = createCanvas(450, 1200, WEBGL);
   myCanvas.parent("pagecontainer");
   angleMode(DEGREES);
 }
