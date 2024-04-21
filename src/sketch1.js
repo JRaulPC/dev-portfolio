@@ -1,5 +1,5 @@
 function setup() {
-  const myCanvas = createCanvas(450, windowHeight * 1.8, WEBGL);
+  const myCanvas = createCanvas(450, windowHeight * 1.2, WEBGL);
   myCanvas.parent("pagecontainer");
   angleMode(DEGREES);
 }
@@ -13,6 +13,7 @@ function draw() {
   rotateY(map(mouseX, 0, width, 0, 20) * 0.9);
   rotateX(10);
 
+  translate(0, -50);
   for (var i = 0; i < 500; i++) {
     var r = map(sin(frameCount), -1, 1, 100, 100);
     var g = map(i, 0, 20, 0, 200);
