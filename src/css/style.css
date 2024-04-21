@@ -45,6 +45,7 @@ canvas {
 
 .page-container {
   display: flex;
+  justify-content: flex-end;
   flex-direction: row-reverse;
 }
 
@@ -56,6 +57,7 @@ canvas {
 
 .main-section {
   display: flex;
+  width: 100vw;
   background: #efebab;
   background: -webkit-linear-gradient(0deg, #efebab 0%, #f0ea7e 100%);
   background: linear-gradient(0deg, #efebab 0%, #f0ea7e 100%);
