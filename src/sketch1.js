@@ -7,7 +7,7 @@ function setup() {
 
 function createCanvasWindow() {
   const canvasWidth = min(450, windowWidth);
-  const canvasHeight = windowHeight * 1.1;
+  const canvasHeight = windowHeight * 1.2;
 
   if (myCanvas) {
     resizeCanvas(canvasWidth, canvasHeight);
