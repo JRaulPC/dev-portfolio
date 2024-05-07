@@ -1,10 +1,20 @@
-function setup() {
-  const canvasWidth = min(450, windowWidth); // Limit the width to a maximum of 450
-  const canvasHeight = windowHeight;
+let myCanvas;
 
-  const myCanvas = createCanvas(canvasWidth, canvasHeight, WEBGL);
-  myCanvas.parent("pagecontainer");
+function setup() {
+  createCanvasWindow();
   angleMode(DEGREES);
+}
+
+function createCanvasWindow() {
+  const canvasWidth = min(450, windowWidth);
+  const canvasHeight = windowHeight * 1.1;
+
+  if (myCanvas) {
+    resizeCanvas(canvasWidth, canvasHeight);
+  } else {
+    myCanvas = createCanvas(canvasWidth, canvasHeight, WEBGL);
+    myCanvas.parent("pagecontainer");
+  }
 }
 
 function draw() {
@@ -19,7 +29,8 @@ function draw() {
   translate(0, -50);
   var radValues = [];
   for (var i = 0; i < 500; i++) {
-    radValues[i] = i * (mouseY * 0.1);
+    var constrainedMouseY = constrain(mouseY, 50, height - 50);
+    radValues[i] = i * (constrainedMouseY * 0.1);
   }
 
   for (var i = 0; i < 500; i++) {
@@ -40,4 +51,8 @@ function draw() {
     }
     endShape(CLOSE);
   }
+}
+
+function windowResized() {
+  createCanvasWindow();
 }
