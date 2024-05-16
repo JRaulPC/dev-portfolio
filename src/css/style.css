@@ -253,6 +253,10 @@ canvas {
 }
 
 @media screen and (max-width: 768px) {
+  .main-section__name {
+    padding-left: 8px;
+    padding-top: 32px;
+  }
   canvas {
     display: none;
   }
