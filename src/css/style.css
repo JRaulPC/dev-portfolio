@@ -134,8 +134,9 @@ canvas {
 }
 
 .main-section__resume {
+  display: block;
   font-size: large;
-  padding-top: 12px;
+  padding-top: 16px;
 }
 
 .projects-section {
@@ -257,6 +258,7 @@ canvas {
     padding-left: 8px;
     padding-top: 32px;
   }
+
   canvas {
     display: none;
   }
@@ -278,6 +280,12 @@ canvas {
     padding: 20px;
   }
 
+  .main-section__resume {
+    display: block;
+    font-size: large;
+    padding-top: 2px;
+  }
+
   .main-section__technologies {
     display: flex;
     justify-content: flex-start;
@@ -287,7 +295,16 @@ canvas {
     padding-top: 22px;
   }
 
+  .main-section {
+    height: 370px;
+  }
+
+  .about-me {
+    padding-left: 12px;
+  }
+
   .about-me__text {
+    display: none;
     padding-top: 12px;
     font-size: medium;
     width: 200px;
