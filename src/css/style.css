@@ -351,3 +351,7 @@ canvas {
     width: min-content;
   }
 }
+
+.p5Canvas {
+  height: auto;
+}

@@ -7,12 +7,16 @@ function setup() {
 
 function createCanvasWindow() {
   const canvasWidth = min(450, windowWidth);
-  const canvasHeight = windowHeight * 1.2;
+  const canvasHeight = windowHeight * 1.3;
 
   if (myCanvas) {
     resizeCanvas(canvasWidth, canvasHeight);
+
+    myCanvas.elt.style.removeProperty("height");
   } else {
     myCanvas = createCanvas(canvasWidth, canvasHeight, WEBGL);
+
+    myCanvas.elt.style.removeProperty("height");
     myCanvas.parent("pagecontainer");
   }
 }
